@@ -1,0 +1,733 @@
+body {
+	left: 0;
+	margin: 0;
+	background-color: gray;
+	font-family: "Montserrat", "Myriad", "Lucida Sans", sans-serif;	
+	font-size: 12px;
+	z-index: -100;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+.main_wrapper {
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin: 0px auto;
+	background: url('../assets/bg.png') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: fixed;
+	z-index: -100;
+}
+
+/* Navigational Menu & Button styling */
+
+.menu_open {
+	cursor: pointer;
+	margin-left: 20px;
+	padding-top: 10px;
+	height: 30px;
+	width: auto;
+	font-style: thick;
+	position: fixed;
+	z-index: 1000;
+}
+
+.menu_open span i {
+	padding-right: 5px;
+}
+
+#menu_label {
+	color: white;
+	font-size: 175%;
+	opacity: 0.7;
+	text-shadow: 2px 2px 4px black;
+}
+
+.menu_top a {
+	right: 25px;
+	color: white;
+	font-size: 195%;
+	opacity: 0.7;
+	text-shadow: 2px 2px 4px black;
+	cursor: pointer;
+	margin-left: 20px;
+	padding-top: 10px;
+	height: 30px;
+	width: auto;
+	font-style: thick;
+	position: fixed;
+	z-index: 1000;
+	text-decoration: none;
+}
+
+.menu_close {
+	color: white;
+	opacity: 0.8;
+	font-size: 18px;
+	padding-top: 8px;
+	padding-left: 15px;
+	padding-bottom: 30px;
+	text-shadow: 2px 2px 4px black;
+	cursor: pointer;
+}
+
+.menu_bar {
+	width: 220px;
+	height: 100%;
+	left: -221px;
+	background-color: #3A3A3A;
+	position: fixed;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	border-right: 1px solid white;
+	background: url('../assets/tweed.png') repeat left top; /* free background from subtlepatterns.com */
+	font-family: "Roboto Slab", serif;
+	border-radius: 0px 5px 5px 0px;
+	z-index: 1;
+}
+
+.menu_bar p {
+	margin: 0px auto;
+	color: gray;
+	position: absolute;
+	bottom: 0;
+	padding-left: 20px;
+}
+
+.menu_bar li {
+	line-height: 30px;
+	padding-bottom: 3px;
+	padding-left: 20px;
+	padding-top: 3px;
+	color: white;
+	text-decoration: none;
+	font-size: 87.5%;
+	text-shadow: 2px 2px 4px black;
+}
+
+.menu_bar li a {
+	color: white;
+	text-decoration: none;
+	font-size: 150%;
+	text-shadow: 2px 2px 4px black;
+}
+
+.menu_bar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Page Elements */
+
+.element_center {
+	margin: 0px auto;
+	width: 80%;
+	height: auto;
+	position: relative;
+	padding: 1%;
+	padding-bottom: 80px;
+}
+
+.presentation_element_nobg_after.element_center.wide {
+	width: 95%;
+}
+
+
+.presentation_element_nobg {
+	display: block;
+	margin-top: 8%;
+	z-index: 1;
+	vertical-align: middle;
+}
+
+.presentation_element_nobg_main {
+	min-height: 800px;
+	display: block;
+	margin-top: 8%;
+	z-index: 1;
+	vertical-align: middle;
+}
+
+
+.presentation_element_nobg_after {
+	display: block;
+	margin-top: 0px;
+	z-index: 1;
+	vertical-align: middle;
+	min-height: 800px;
+}
+
+
+.text_header_fancy {
+	color: white;
+	opacity: 0.7;
+	text-shadow: 2px 2px 4px black;
+	text-align: center;
+}
+
+.text_header_fancy_dark {
+	color: black;
+	opacity: 0.7;
+	text-shadow: 2px 2px 4px gray;
+	text-align: center;
+}
+
+
+.presentation_element_nobg_main h1 {
+	font-size: 400%;
+	display: none;
+}
+
+.presentation_element_nobg_main h2 {
+	font-size: 245%;
+	display: none;
+}
+
+.presentation_element_nobg_main h3 {
+	font-size: 120%;
+	color: white;
+	font-family: "Roboto Slab", serif;
+	font-style: italic;
+	display: none;
+}
+
+.presentation_element_nobg h1 {
+	font-size: 400%;
+}
+
+.presentation_element_nobg h2 {
+	font-size: 245%;
+}
+
+.presentation_element_nobg h3 {
+	font-size: 120%;
+	color: white;
+	font-family: "Roboto Slab", serif;
+	font-style: italic;
+}
+
+
+.presentation_element_nobg_after h1 {
+	font-size: 400%;
+}
+
+.presentation_element_nobg_after h2 {
+	font-size: 245%;
+}
+
+.presentation_element_nobg_after h3 {
+	font-size: 120%;
+	font-family: "Roboto Slab", serif;
+	font-style: italic;
+}
+
+
+/* .presentation_element_main {
+	background-color: white;
+	border-radius: 3px;
+	border: 1px solid gray;
+	box-shadow: 2px 2px 2px gray;
+	display: block;
+	background: url('/assets/mooning.png') repeat left top;
+	margin-left: 8%;
+	z-index: 1;
+} */
+
+.presentation_element_main span {
+	color: gray;
+	font-size: 110%;
+}
+
+.parallax_center {
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	z-index: 4;	
+	background-attachment: fixed;
+	/* position: relative; */
+	box-shadow: 10px 10px 70px 10px black;
+	display: block;
+}
+
+.parallax_center p {
+	font-size: 14px;
+	color: black;
+	font-family: "Roboto Slab", serif;
+	font-style: normal;
+}
+
+.education_element_main {
+	background: url('../assets/school.png') repeat left top;
+	height: auto;
+}
+
+.box_ul {
+	list-style-type: none;
+	margin: 0px auto;
+	padding: 0px;
+	width: 100%;
+	vertical-align: middle;
+	position: relative;
+	text-align: center;
+	max-width: 2000px;
+}
+
+.box {
+	list-style-type: none;
+	width: 30%;
+	border: 0px solid gray;
+	border-radius: 10px;
+	padding: 10px;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.3);
+	opacity: 0.7;
+	-webkit-box-shadow: 0 1px 6px gray;
+	box-shadow: 0 1px 2px gray;
+	min-height: 150px;
+	text-align: center;
+	margin: 12px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.download_slick_bg {
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+}
+
+.download_element_main_box {
+	border: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-color: transparent;
+	opacity: 1;
+	padding: 40px;
+}
+
+.download_element_main_box a {
+	text-decoration: none;
+	font-family: "Roboto Slab", serif;
+	color: white;
+	font-size: 575%;
+	opacity: 0.7;
+	text-shadow: 2px 2px 4px black;
+}
+
+
+.achieve_element_main_box {
+	padding: 20px;
+	min-width: 150px;
+	font-size: 120%;
+	min-height: 125px;
+	width: 20%;
+	overflow: auto;
+	background-color: #77dd77;
+	border-radius: 2px 2px 140px 140px;
+	border: 10px solid black;
+	box-shadow: 0 4px 10px black;
+	border-right: 10px solid gray;
+}
+
+.work_element_main {
+	background: url('../assets/geometry.png') repeat left top;
+	height: auto;
+	z-index: 5;
+}
+
+.experience_element_main {
+	background: url('../assets/brickwall.png') repeat left top;
+	height: auto;
+	z-index: 6;
+}
+
+.achieve_element_main {
+	background: url('../assets/knitting250px.png') repeat left top;
+	height: auto;
+	z-index: 7;
+}
+
+
+/* Experience Timeline */
+
+.timeline {
+	list-style: none;
+	padding: 20px 0 20px;
+	position: relative;
+	height: auto;
+	min-width: 300px;
+	max-width: 2000px;
+	margin: 0px auto;
+}
+
+/* This will create the line for the timeline. the main thing here is "left: 50%" which forces it to the middle */
+.timeline:before {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	content: ' ';
+	width: 2px;
+	background-color: gray;
+	left: 50%;
+	height: 100%;
+	opacity: 0.7;
+}
+
+/* This is the point code for the timeline. it essentially just abuses the border-radius element. Again, left: 50% tells it to go to the middle, though some adjustment was necessary */
+.timeline > li > .timeline_point {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	text-align: center;
+	z-index: 100;
+	line-height: 50px;
+	left: 50%;
+	margin-left: -24px;
+	-webkit-box-shadow: 0 1px 2px gray;
+	box-shadow: 0 1px 2px gray;
+	color: white;
+	font-size: 320%;
+}
+
+/* This is the code for the little "bubble" where text sits */
+.timeline > li > .timeline_box {
+	width: 38%;
+	float: left;
+	border: 1px solid gray;
+	border-radius: 10px;
+	padding: 20px;
+	position: relative;
+	background-color: white;
+	opacity: 0.7;
+	-webkit-box-shadow: 0 1px 6px gray;
+	box-shadow: 0 1px 2px gray;
+	margin-bottom: 20px;
+	padding-bottom: 40px;
+}
+
+
+/* This is the white layer for the arrow */
+.timeline > li > .timeline_box:after {
+	width: 0px;
+	height: 0px;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid white;
+	z-index: 101;
+	content: ' ';
+	position: absolute;
+	right: -9px;
+	top: 17px;
+}
+
+/* This creates the shadow effect by drawing the same arrow slightly offset */
+.timeline > li > .timeline_box:before {
+	width: 0px;
+	height: 0px;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid gray;
+	z-index: 101;
+	content: ' ';
+	position: absolute;
+	right: -10px;
+	top: 17px;
+}
+
+/* This creates the "opposite" side boxes */
+.timeline > li.timeline_odd > .timeline_box {
+	float: right;
+	margin-right: -2px;
+}
+
+.timeline > li.timeline_odd > .timeline_box:after {
+	border-right: 10px solid white;
+	border-left: 0px solid transparent;
+	left: -9px;
+	right: auto;
+	z-index: 103;
+}
+
+.timeline > li.timeline_odd > .timeline_box:before {
+	border-right: 10px solid gray;
+	border-left: 0px solid transparent;
+	left: -10px;
+	right: auto;
+	z-index: 102;
+}
+
+/* This is necessary to space the elements properly */
+.timeline > li:before,
+.timeline > li:after {
+	content: ' ';
+	display: block;
+}
+
+.timeline > li:after {
+	clear: both;
+}
+
+.timeline_point.point_inprog {
+	background-color: gray;
+}
+
+.timeline_point.point_complete {
+	background-color: green;
+}
+
+.bubbles {
+	list-style: none;
+	padding: 20px 0 20px;
+	position: relative;
+	height: auto;
+	width: 70%;
+	margin: 0px auto;
+	overflow: auto;
+	max-width: 1080px;
+}
+
+.bubbles > li  {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	text-align: center;
+	z-index: 100;
+	line-height: 30px;
+	background-color: gray;
+	-webkit-box-shadow: 0 1px 2px gray;
+	box-shadow: 0 1px 2px gray;
+	color: white;
+	font-size: 30%;
+	float: left;
+}
+
+.bubbles > li.twooften {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #b39eb5;
+	font-size: 80%;
+	float: right;
+}
+
+.bubbles > li.threeoften {
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	background-color: #b19cd9;
+	font-size: 90%;
+	float: left;
+}
+
+.bubbles > li.fouroften {
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	background-color: #fdfd96;
+	font-size: 180%;
+	float: right;
+	color: gray;
+}
+
+.bubbles > li.fiveoften {
+	width: 110px;
+	height: 110px;
+	line-height: 110px;
+	background-color: #779ecb;
+	font-size: 200%;
+	float: right;
+}
+
+.bubbles > li.sixoften {
+	width: 130px;
+	height: 130px;
+	line-height: 130px;
+	background-color: #966fd6;
+	font-size: 200%;
+	float: right;
+}
+
+.bubbles > li.sevenoften {
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	background-color: green;
+	font-size: 250%;
+	float: left;
+}
+
+.bubbles > li.eightoften {
+	width: 170px;
+	height: 170px;
+	line-height: 170px;
+	background-color: fuchsia;
+	font-size: 280%;
+	float: right;
+}
+
+.bubbles > li.nineoften {
+	width: 190px;
+	height: 190px;
+	line-height: 190px;
+	background-color: #77dd77;
+	font-size: 280%;
+	float: left;
+}
+
+.bubbles > li.tenoften {
+	width: 210px;
+	height: 210px;
+	line-height: 210px;
+	background-color: #ffb347;
+	font-size: 340%;
+	float: right;
+}
+
+.profile_picture {
+	background: url('../assets/user-images/Photo Jun 16, 12 12 44 PM.jpeg');	
+}
+
+.subtlepatterns_picture {
+	background: url('../assets/user-images/Photo Jun 16, 1 02 40 PM.jpeg');
+	box-shadow: 0px 4px 8px gray;
+}
+
+.fontawesome_picture {
+	background: url('../assets/user-images/Photo Jun 16, 1 02 15 PM.jpeg');
+	box-shadow: 0px 4px 8px gray;
+}
+
+.googlefonts_picture {
+	background: url('../assets/user-images/Photo Jun 16, 1 12 21 PM.jpeg');
+	box-shadow: 0px 4px 8px gray;
+}
+
+
+.user_picture {
+	width: 200px;
+	height: 200px;
+	line-height: 100px;
+	border-radius: 50%;
+	box-shadow: 0px 4px 8px black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+	display: block;
+	margin: 0px auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 a {
+	color: white;
+	
+	text-shadow: 2px 2px 4px black;
+}
+
+/* Mobile Styling */
+
+@media only screen and (max-width: 780px) {
+
+	.timeline:before {
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	content: ' ';
+	width: 2px;
+	background-color: gray;
+	left: 49%;
+	height: 100%;
+	opacity: 0.7;
+	}
+
+	.timeline {
+	list-style: none;
+	position: relative;
+	height: auto;
+	max-width: 780px;
+	vertical-align: middle;
+	margin: 0px auto;
+	}
+	
+	.timeline > li > .timeline_point {
+	left: 49%;
+	margin-top: 5px;
+	}
+
+		
+	.timeline > li > .timeline_box {
+	width: 90%;
+	border: 1px solid gray;
+	border-radius: 10px;
+	padding: 20px;
+	position: relative;
+	background-color: white;
+	opacity: 1;
+	-webkit-box-shadow: 0 1px 6px gray;
+	box-shadow: 0 1px 2px gray;
+	margin-bottom: 20px;
+	display: block;
+	vertical-align: middle;
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 25px;
+	}
+	
+	.timeline > li.timeline_odd > .timeline_box {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+	
+	.timeline > li > .timeline_box:after,
+	.timeline > li > .timeline_box:before {
+		display: none;
+	}
+	
+	
+
+	.timeline > li.timeline_odd > .timeline_box:after {
+	display: none;
+	}
+
+	.timeline > li.timeline_odd > .timeline_box:before {
+	display: none;
+	}
+	
+	.user_picture {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	border-radius: 50%;
+	box-shadow: 0px 4px 8px black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+	display: block;
+	margin: 0px auto;
+	
+	}
+	
+	.download_element_main_box a {
+	text-decoration: none;
+	font-family: "Roboto Slab", serif;
+	color: white;
+	font-size: 275%;
+	opacity: 0.7;
+	text-shadow: 2px 2px 4px black;
+}
+
+}
